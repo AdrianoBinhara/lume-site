@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lume: uma luz que conhece você</title>
+  <meta name="description" content="Lume é um assistente pessoal para Mac. Lê seu contexto no seu próprio computador e conversa com você pelo Telegram.">
+  <link rel="icon" href="img/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="./"><img src="img/icon.png" alt="">Lume</a>
+      <nav><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos</a></nav>
+    </header>
+
+    <div class="hero">
+      <canvas id="sphere" aria-hidden="true"></canvas>
+      <h1>Lume</h1>
+      <p class="tagline">Uma luz que conhece você.</p>
+      <p class="lead">Um assistente pessoal que mora no seu Mac. Ele lê o que importa pra você, lembra de tudo e responde no Telegram, a qualquer hora.</p>
+      <a class="pill quiet" href="#como">Em breve para macOS</a>
+    </div>
+  </div>
+
+  <div class="shot"><img src="img/app.png" alt="Janela do Lume com a Mente, a esfera de pontos que guarda o que ele sabe sobre você"></div>
+
+  <div class="wrap">
+    <section class="features">
+      <div><h3>Seu contexto, no seu Mac</h3><p>iMessage, WhatsApp, Notas e Contatos são lidos direto do seu computador. Nada vai para servidores do Lume, porque eles não existem.</p></div>
+      <div><h3>Fala com você no Telegram</h3><p>Pergunte, peça, mande áudio. O Lume responde do seu Mac, usando o Claude que você já tem.</p></div>
+      <div><h3>Conecta o que você usa</h3><p>Gmail e Agenda, reuniões do Granola, Linear, Otto e as métricas dos seus apps. Um clique cada.</p></div>
+      <div><h3>Uma mente que cresce</h3><p>Pessoas, projetos, decisões e preferências viram uma esfera de memória que você vê e edita.</p></div>
+      <div><h3>Você aprova o que importa</h3><p>Mandar e-mail, criar evento ou publicar só acontece depois do seu toque em Aprovar.</p></div>
+      <div><h3>Trabalha enquanto você dorme</h3><p>Rotinas como o resumo da manhã chegam prontas no seu Telegram.</p></div>
+    </section>
+
+    <section class="how" id="como">
+      <h2>Como funciona</h2>
+      <ol>
+        <li>Instale o Lume e o Claude Code no seu Mac.</li>
+        <li>Dê as permissões e crie seu bot no Telegram, com o passo a passo dentro do app.</li>
+        <li>Conecte o que quiser e comece a conversar.</li>
+      </ol>
+    </section>
+
+    <footer>
+      <a href="privacidade.html">Privacidade</a><a href="termos.html">Termos</a>
+      <span>Lume, feito por Adriano Binhara</span>
+    </footer>
+  </div>
+  <script src="sphere.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacidade do Lume</title>
+  <link rel="icon" href="img/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="./"><img src="img/icon.png" alt="">Lume</a>
+      <nav><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos</a></nav>
+    </header>
+
+    <main class="doc">
+      <h1>Política de privacidade</h1>
+      <p class="updated">Atualizada em 26 de outubro de 2026</p>
+
+      <h2>O resumo</h2>
+      <p>O Lume roda no seu Mac. Ele não tem servidores, não guarda seus dados em lugar nenhum fora do seu computador e não vende, aluga nem compartilha nada com anunciantes.</p>
+
+      <h2>O que o Lume acessa, e só com a sua permissão</h2>
+      <ul>
+        <li><strong>Dados do seu Mac:</strong> conversas do iMessage e do WhatsApp Desktop, Notas e Contatos, lidos em modo somente leitura depois que você libera o acesso no macOS.</li>
+        <li><strong>Google:</strong> com o seu login, o Lume lê e busca e-mails do Gmail, cria rascunhos, envia e-mails que você aprovar, lê os eventos das suas agendas e cria eventos que você aprovar.</li>
+        <li><strong>Outros serviços que você conectar:</strong> Granola, Linear, Otto e fontes de métricas, cada um pelo login ou pela chave que você fornecer.</li>
+      </ul>
+
+      <h2>Para onde os dados vão</h2>
+      <ul>
+        <li><strong>Seu Mac:</strong> tokens de acesso ficam nas Chaves do macOS. A memória do Lume fica na pasta <code>~/Lume</code>, no seu computador.</li>
+        <li><strong>Seu Claude:</strong> quando você pede algo, o Lume usa o Claude Code instalado no seu Mac, com a sua conta da Anthropic, e envia a ela só o que for necessário pra responder ao seu pedido. O tratamento desses dados segue os termos e as configurações da sua conta Anthropic.</li>
+        <li><strong>Telegram:</strong> as mensagens entre você e o seu bot passam pelos servidores do Telegram.</li>
+        <li><strong>Voz, se você ligar:</strong> áudios são transcritos e respostas faladas são geradas pela ElevenLabs, com a sua chave.</li>
+      </ul>
+
+      <h2>Dados do Google</h2>
+      <p>O uso e a transferência, para qualquer outro app, de informações recebidas das APIs do Google seguem a <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Dados do Usuário dos Serviços de API do Google</a>, incluindo os requisitos de Uso Limitado. O Lume usa os dados do Google só pra executar o que você pede, não os usa pra publicidade, não permite que pessoas os leiam e não os usa pra treinar modelos de inteligência artificial.</p>
+
+      <h2>Como apagar tudo</h2>
+      <ul>
+        <li>Desconecte cada serviço em Ajustes do Lume. Os tokens são apagados do seu Mac.</li>
+        <li>Revogue o acesso do Google em <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+        <li>Apague a pasta <code>~/Lume</code> e o app.</li>
+      </ul>
+
+      <h2>Contato</h2>
+      <p>Adriano Binhara, <a href="mailto:binharadlucca@gmail.com">binharadlucca@gmail.com</a>.</p>
+
+      <h2>English summary</h2>
+      <p>Lume is a Mac app with no servers. It reads the user's local iMessage, WhatsApp Desktop, Notes and Contacts data in read-only mode, and Gmail and Google Calendar data through OAuth, only with the user's permission and only to fulfil the user's requests. Access tokens are stored in the macOS Keychain. Content needed to answer a request is sent to the AI provider the user already uses through their own Claude Code account. Lume's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Google user data is not used for advertising, is not read by humans, is not sold and is not used to train AI models. Users can revoke access at any time at myaccount.google.com/permissions and by disconnecting inside Lume. Contact: binharadlucca@gmail.com.</p>
+    </main>
+
+    <footer>
+      <a href="privacidade.html">Privacidade</a><a href="termos.html">Termos</a>
+      <span>Lume, feito por Adriano Binhara</span>
+    </footer>
+  </div>
+</body>
+</html>
