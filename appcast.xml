@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Lume</title>
+        <item>
+            <title>0.2.0</title>
+            <pubDate>Wed, 28 Oct 2026 15:46:58 -0300</pubDate>
+            <link>https://adrianobinhara.github.io/lume-site/</link>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>0.2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Lume 0.2
+
+- **Agentes**: ligue sua mente no Claude, no ChatGPT, no Cursor e nos seus bots. Passo a passo e aviso quando a primeira consulta chega.
+- **Fontes**: tudo de onde o Lume aprende num lugar só, com iMessage, WhatsApp, Notas e Contatos.
+- **Primeiro uso** mais curto. O Telegram ficou opcional.
+- **Atualização automática**: as próximas versões chegam sozinhas.
+]]></description>
+            <enclosure url="https://adrianobinhara.github.io/lume-site/releases/Lume-0.2.0.zip" length="7287983" type="application/octet-stream" sparkle:edSignature="5b+VCFvQDqWls4uqKcZJS9BDWL1LDJoAl7mlYxF3SNSVm8uGBiiWJuf2hRWFWFbB9t0Jo2IgNu00cGEEOyckCA=="/>
+        </item>
+    </channel>
+</rss>
