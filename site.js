@@ -7,14 +7,14 @@
    ============================================================ */
 const LUME = {
   preco: "R$ 97",
-  nota: "Pagamento único. Um ano de atualizações incluso.",
-  garantia: "7 dias para pedir reembolso.",
+  nota: "Pagamento único, 1 ano de atualizações.",
+  garantia: "Reembolso em 7 dias.",
   link: "https://buy.stripe.com/fZufZi4MWc9IdgK3a577O04",
 
   lancamento: true,
   precoLancamento: "R$ 47",
   rotuloLancamento: "no lançamento",
-  notaLancamento: "Até 05/11 ou para os 100 primeiros.",
+  notaLancamento: "Até 05/11 ou 100 primeiros.",
   cupom: "LANCAMENTO",
 
   download: "releases/Lume-0.2.0.zip",
