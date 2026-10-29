@@ -1,2 +1,4 @@
 .DS_Store
-Icon?
+Icon[]
+# The global "Icon?" rule also matches this folder on a case-insensitive Mac.
+!assets/icons/
