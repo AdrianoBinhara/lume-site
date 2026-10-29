@@ -24,7 +24,7 @@
 
   <main class="doc">
     <h1 class="h2">Política de privacidade</h1>
-    <p class="updated">Atualizada em 28 de outubro de 2026</p>
+    <p class="updated">Atualizada em 29 de outubro de 2026</p>
 
     <h2>O resumo</h2>
     <p>O Lume roda no seu Mac. Seus dados nunca passam por servidor nenhum do Lume: a memória fica no seu computador e não é vendida, alugada nem compartilhada com anunciantes. O único servidor do Lume é o de licença, descrito abaixo, e ele não vê sua memória.</p>
@@ -75,6 +75,20 @@
 
     <h2>English summary</h2>
     <p>Lume is a Mac app. User data never passes through any Lume server; the only Lume server is the license server, which stores the purchase e-mail and name, the Stripe session id, an anonymous hash of the active Mac and that Mac's name, for as long as the license exists (processors: Stripe, MillionSend, Cloudflare). Lume reads the user's local iMessage, WhatsApp Desktop, Notes and Contacts data in read-only mode, synced folders the user turns on, and Gmail and Google Calendar data through OAuth, only with the user's permission and only to fulfil the user's requests. Access tokens are stored in the macOS Keychain. Content needed to answer a request is sent to the AI provider the user already uses through their own Claude Code account. AI apps the user connects (Claude, ChatGPT, Cursor, Grok, the user's own bots) query the user's memory in read-only mode, locally or through a private address the user controls; passwords, codes, cards and documents are redacted first. Lume's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Google user data is not used for advertising, is not read by humans, is not sold and is not used to train AI models. Users can revoke access at any time at myaccount.google.com/permissions and by disconnecting inside Lume. Payments are processed by Stripe. Contact: hi@appsolutelyltda.com.br.</p>
+
+    <h2 id="google-user-data">Google user data</h2>
+    <p>With the user's permission, through Google sign-in, Lume accesses:</p>
+    <ul>
+      <li><strong>Gmail</strong> (gmail.readonly, gmail.compose): reads and searches the user's emails to answer the user's requests, creates drafts, and sends an email only after the user approves it.</li>
+      <li><strong>Google Calendar</strong> (calendar.calendarlist.readonly, calendar.events): reads the user's calendars and events, and creates an event only after the user approves it.</li>
+      <li><strong>YouTube</strong> (youtube.readonly): reads the user's channel information and statistics.</li>
+    </ul>
+    <p><strong>How it is used.</strong> Only to provide the features the user asks for inside Lume: searching and summarizing emails and events, answering the user's questions about them, and drafting replies or events the user approves.</p>
+    <p><strong>Where it is stored.</strong> Only on the user's Mac: access tokens in the macOS Keychain, and email and calendar content in an encrypted local index. Lume has no server that receives Google user data.</p>
+    <p><strong>Sharing.</strong> Google user data is not sold, not used for advertising and not shared with third parties. When the user asks Lume something, only the excerpts needed for the answer are sent to the AI provider the user already uses with their own account (Anthropic's Claude), to produce that answer. If the user connects another AI app to Lume, email content is available to it only after the user turns it on for that app.</p>
+    <p><strong>No AI training, no human access.</strong> Google user data is not used to develop, improve or train generalized AI or machine learning models, and is not read by humans, except with the user's explicit consent, for security purposes or to comply with the law.</p>
+    <p><strong>Retention and deletion.</strong> The data stays on the user's Mac until the user deletes it. "Apagar tudo" (delete everything) in Lume's settings removes the index and the tokens, disconnecting Google inside Lume stops all access, and access can be revoked at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+    <p><strong>Limited Use.</strong> Lume's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
   </main>
 
   <footer class="footer">
