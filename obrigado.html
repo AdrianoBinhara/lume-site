@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Obrigado. Sua chave do Lume.</title>
+  <meta name="description" content="Pagamento confirmado. Sua chave do Lume aparece aqui e chega por e-mail. Baixe o Lume, abra e cole a chave.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="style.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="img/icon.png" alt="" width="28" height="28">Lume</a>
+      <nav class="nav-links" aria-label="Principal">
+        <a href="privacidade.html">Privacidade</a>
+        <a href="termos.html">Termos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="doc thanks" data-obrigado>
+    <div class="sphere" aria-hidden="true"><canvas data-sphere data-n="800"></canvas></div>
+
+    <!-- Sem session_id: quem abriu a página direto. -->
+    <section data-estado="sem-sessao">
+      <p class="eyebrow">Lume para Mac</p>
+      <h1 class="h2">Baixe o Lume.</h1>
+      <p class="lead">Instale, abra e cole a chave que chegou no seu e-mail. Ainda não comprou? O teste de 7 dias começa sozinho, sem cartão e sem conta.</p>
+    </section>
+
+    <!-- Esperando o webhook do Stripe. -->
+    <section data-estado="gerando" hidden>
+      <p class="eyebrow">Pagamento confirmado</p>
+      <h1 class="h2">Obrigado. Sua mente começa agora.</h1>
+      <p class="status" role="status" aria-live="polite"><span class="dot breathing" aria-hidden="true"></span>Gerando sua chave…</p>
+      <p class="lead">Leva alguns segundos. Você pode baixar o Lume enquanto isso.</p>
+    </section>
+
+    <!-- Chave pronta. -->
+    <section data-estado="pronta" hidden>
+      <p class="eyebrow">Pagamento confirmado</p>
+      <h1 class="h2">Obrigado. Sua mente começa agora.</h1>
+      <p class="lead">Esta é a sua chave. Guarde com você.</p>
+      <div class="key-card">
+        <output class="key" data-chave aria-label="Sua chave do Lume">LUME-00000-00000-00000-00000</output>
+        <div class="cta-row key-actions">
+          <button class="btn btn-secondary" type="button" data-copiar>Copiar chave</button>
+          <a class="btn btn-primary" data-ativar href="#">Ativar no Lume</a>
+        </div>
+        <p class="small" data-email-linha>A chave também foi pro seu e-mail (<b data-email></b>).</p>
+      </div>
+    </section>
+
+    <!-- Não achou a compra, ou algo falhou. -->
+    <section data-estado="erro" hidden>
+      <p class="eyebrow">Quase lá</p>
+      <h1 class="h2">Não achamos a sua chave por aqui.</h1>
+      <p class="lead">Calma, a compra não se perdeu. Se você já pagou, a chave chega no e-mail da compra. Peça o reenvio abaixo ou escreva pra <a href="mailto:hi@appsolutelyltda.com.br">hi@appsolutelyltda.com.br</a>.</p>
+    </section>
+
+    <div class="cta-row">
+      <a class="btn btn-primary" data-download data-download-btn href="releases/Lume-0.2.0.zip" download>Baixar o Lume</a>
+    </div>
+    <p class="meta">Lume 0.2.0 · 7 MB · Mac com chip Apple e macOS 26 ou mais novo</p>
+
+    <ol class="steps">
+      <li><div>Baixe o Lume e arraste pra Aplicativos.<span>Um clique duplo no zip, na pasta Downloads. Depois pode apagar o zip.</span></div></li>
+      <li><div>Abra o Lume.<span>Ele pede as permissões, confere o Claude Code e conecta suas IAs. Um clique cada.</span></div></li>
+      <li><div>Cole a chave.<span>Quando o Lume pedir, cole a chave que está aqui e no seu e-mail. Ou clique em Ativar no Lume.</span></div></li>
+    </ol>
+
+    <section class="resend" data-reenviar>
+      <h2 class="h3" data-reenviar-titulo>Já comprou? Reenviar minha chave</h2>
+      <p class="small">A chave vai só pro e-mail usado na compra.</p>
+      <form class="resend-form" data-reenviar-form>
+        <label class="sr-only" for="email">Seu e-mail da compra</label>
+        <input id="email" name="email" type="email" required autocomplete="email" placeholder="seu@email.com">
+        <button class="btn btn-secondary" type="submit">Reenviar minha chave</button>
+      </form>
+      <p class="small" role="status" aria-live="polite" data-reenviar-msg hidden>Se existir uma compra com esse e-mail, a chave chegou lá.</p>
+      <noscript><p class="small">Sem JavaScript, peça a chave por e-mail: <a href="mailto:hi@appsolutelyltda.com.br?subject=Reenviar%20minha%20chave%20do%20Lume">hi@appsolutelyltda.com.br</a>.</p></noscript>
+    </section>
+
+    <p class="small" style="margin-top: 28px;">Um ano de atualizações incluso: o Lume avisa quando tem versão nova e instala com um clique.</p>
+    <p class="small" style="margin-top: 10px;">Precisa de ajuda? Escreva pra <a href="mailto:hi@appsolutelyltda.com.br">hi@appsolutelyltda.com.br</a>.</p>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <nav aria-label="Rodapé">
+        <a href="privacidade.html">Privacidade</a>
+        <a href="termos.html">Termos</a>
+        <a href="mailto:hi@appsolutelyltda.com.br">Contato</a>
+      </nav>
+      <span>Lume, feito por Adriano Binhara. Vendido por Appsolutely LTDA.</span>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -4,59 +4,90 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacidade do Lume</title>
-  <link rel="icon" href="img/favicon.png">
+  <meta name="description" content="O Lume roda no seu Mac, não tem servidores e não compartilha nada. Veja o que ele acessa, com a sua permissão, e como apagar tudo.">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="wrap">
-    <header class="top">
-      <a class="brand" href="./"><img src="img/icon.png" alt="">Lume</a>
-      <nav><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos</a></nav>
-    </header>
 
-    <main class="doc">
-      <h1>Política de privacidade</h1>
-      <p class="updated">Atualizada em 26 de outubro de 2026</p>
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="img/icon.png" alt="" width="28" height="28">Lume</a>
+      <nav class="nav-links" aria-label="Principal">
+        <a href="privacidade.html" aria-current="page">Privacidade</a>
+        <a href="termos.html">Termos</a>
+      </nav>
+    </div>
+  </header>
 
-      <h2>O resumo</h2>
-      <p>O Lume roda no seu Mac. Ele não tem servidores, não guarda seus dados em lugar nenhum fora do seu computador e não vende, aluga nem compartilha nada com anunciantes.</p>
+  <main class="doc">
+    <h1 class="h2">Política de privacidade</h1>
+    <p class="updated">Atualizada em 28 de outubro de 2026</p>
 
-      <h2>O que o Lume acessa, e só com a sua permissão</h2>
-      <ul>
-        <li><strong>Dados do seu Mac:</strong> conversas do iMessage e do WhatsApp Desktop, Notas e Contatos, lidos em modo somente leitura depois que você libera o acesso no macOS.</li>
-        <li><strong>Google:</strong> com o seu login, o Lume lê e busca e-mails do Gmail, cria rascunhos, envia e-mails que você aprovar, lê os eventos das suas agendas e cria eventos que você aprovar.</li>
-        <li><strong>Outros serviços que você conectar:</strong> Granola, Linear, Otto e fontes de métricas, cada um pelo login ou pela chave que você fornecer.</li>
-      </ul>
+    <h2>O resumo</h2>
+    <p>O Lume roda no seu Mac. Seus dados nunca passam por servidor nenhum do Lume: a memória fica no seu computador e não é vendida, alugada nem compartilhada com anunciantes. O único servidor do Lume é o de licença, descrito abaixo, e ele não vê sua memória.</p>
 
-      <h2>Para onde os dados vão</h2>
-      <ul>
-        <li><strong>Seu Mac:</strong> tokens de acesso ficam nas Chaves do macOS. A memória do Lume fica na pasta <code>~/Lume</code>, no seu computador.</li>
-        <li><strong>Seu Claude:</strong> quando você pede algo, o Lume usa o Claude Code instalado no seu Mac, com a sua conta da Anthropic, e envia a ela só o que for necessário pra responder ao seu pedido. O tratamento desses dados segue os termos e as configurações da sua conta Anthropic.</li>
-        <li><strong>Telegram:</strong> as mensagens entre você e o seu bot passam pelos servidores do Telegram.</li>
-        <li><strong>Voz, se você ligar:</strong> áudios são transcritos e respostas faladas são geradas pela ElevenLabs, com a sua chave.</li>
-      </ul>
+    <h2>O que o Lume acessa, e só com a sua permissão</h2>
+    <ul>
+      <li><strong>Dados do seu Mac:</strong> conversas do iMessage e do WhatsApp Desktop, Notas e Contatos, lidos em modo somente leitura depois que você libera o acesso no macOS.</li>
+      <li><strong>Pastas que você ligar:</strong> as pastas sincronizadas do OneDrive, Google Drive, Dropbox e iCloud Drive, ou uma pasta que você escolher. Nada é lido antes de você ligar, e arquivos que estão só na nuvem nunca são baixados.</li>
+      <li><strong>Google:</strong> com o seu login, o Lume lê e busca e-mails do Gmail, cria rascunhos, envia e-mails que você aprovar, lê os eventos das suas agendas e cria eventos que você aprovar.</li>
+      <li><strong>Outros serviços que você conectar:</strong> Granola, Linear, Otto, redes sociais e fontes de métricas, cada um pelo login, pela chave ou pelo arquivo de exportação que você fornecer.</li>
+    </ul>
 
-      <h2>Dados do Google</h2>
-      <p>O uso e a transferência, para qualquer outro app, de informações recebidas das APIs do Google seguem a <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Dados do Usuário dos Serviços de API do Google</a>, incluindo os requisitos de Uso Limitado. O Lume usa os dados do Google só pra executar o que você pede, não os usa pra publicidade, não permite que pessoas os leiam e não os usa pra treinar modelos de inteligência artificial.</p>
+    <h2>Para onde os dados vão</h2>
+    <ul>
+      <li><strong>Seu Mac:</strong> tokens de acesso ficam nas Chaves do macOS. A memória do Lume fica na pasta <code>~/Lume</code>, no seu computador.</li>
+      <li><strong>Seu Claude:</strong> quando você pede algo, o Lume usa o Claude Code instalado no seu Mac, com a sua conta da Anthropic, e envia a ela só o que for necessário pra responder ao seu pedido. O tratamento desses dados segue os termos e as configurações da sua conta Anthropic.</li>
+      <li><strong>As IAs que você conectar em Agentes:</strong> Claude Code, Claude Desktop e Cursor consultam sua mente direto neste Mac. ChatGPT, Claude na web, Grok e os seus bots consultam por um endereço só seu, criado com o Tailscale, sem servidor do Lume no meio; você pode desligar esse acesso quando quiser. Cada IA vê só o que você liberar em Ajustar, em modo somente leitura. Senhas, códigos, cartões e documentos são ocultados antes de qualquer IA ler. O tratamento do que cada IA recebe segue os termos da sua conta nela.</li>
+      <li><strong>Telegram, se você ligar:</strong> o Telegram é opcional. Se você criar o seu bot, as mensagens entre você e ele passam pelos servidores do Telegram.</li>
+      <li><strong>Voz, se você ligar:</strong> áudios são transcritos e respostas faladas são geradas pela ElevenLabs, com a sua chave.</li>
+    </ul>
 
-      <h2>Como apagar tudo</h2>
-      <ul>
-        <li>Desconecte cada serviço em Ajustes do Lume. Os tokens são apagados do seu Mac.</li>
-        <li>Revogue o acesso do Google em <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
-        <li>Apague a pasta <code>~/Lume</code> e o app.</li>
-      </ul>
+    <h2>Dados do Google</h2>
+    <p>O uso e a transferência, para qualquer outro app, de informações recebidas das APIs do Google seguem a <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Dados do Usuário dos Serviços de API do Google</a>, incluindo os requisitos de Uso Limitado. O Lume usa os dados do Google só pra executar o que você pede, não os usa pra publicidade, não permite que pessoas os leiam e não os usa pra treinar modelos de inteligência artificial.</p>
 
-      <h2>Contato</h2>
-      <p>Adriano Binhara, <a href="mailto:binharadlucca@gmail.com">binharadlucca@gmail.com</a>.</p>
+    <h2>Compra</h2>
+    <p>O Lume é vendido pela Appsolutely LTDA. O pagamento é processado pelo Stripe, que recebe os dados do seu cartão ou Pix e o seu e-mail segundo a política de privacidade dele. O Lume não vê nem guarda dados de pagamento. O e-mail da compra é usado só pra entregar a chave, atender pedidos de reembolso e avisar sobre a sua licença.</p>
 
-      <h2>English summary</h2>
-      <p>Lume is a Mac app with no servers. It reads the user's local iMessage, WhatsApp Desktop, Notes and Contacts data in read-only mode, and Gmail and Google Calendar data through OAuth, only with the user's permission and only to fulfil the user's requests. Access tokens are stored in the macOS Keychain. Content needed to answer a request is sent to the AI provider the user already uses through their own Claude Code account. Lume's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Google user data is not used for advertising, is not read by humans, is not sold and is not used to train AI models. Users can revoke access at any time at myaccount.google.com/permissions and by disconnecting inside Lume. Contact: binharadlucca@gmail.com.</p>
-    </main>
+    <h2>Licença</h2>
+    <p>O servidor de licença existe pra ativar o Lume num Mac, mover a licença de um Mac pro outro e reenviar a chave. Ele guarda exatamente isto:</p>
+    <ul>
+      <li>o e-mail e o nome usados na compra;</li>
+      <li>o id da sessão de pagamento do Stripe;</li>
+      <li>um código anônimo do Mac ativo (um hash, que não identifica o computador fora do Lume) e o nome desse Mac, mostrado só quando você move a licença;</li>
+      <li>as datas da compra, da ativação e das trocas de Mac.</li>
+    </ul>
+    <p>Nenhum dado da sua memória, das suas fontes ou das suas conversas passa por ele. Quem processa esses dados: <strong>Stripe</strong> (pagamento), <strong>MillionSend</strong> (envio do e-mail com a chave) e <strong>Cloudflare</strong> (onde o servidor de licença roda). Os dados ficam guardados enquanto a licença existir, pra que você consiga ativar, mover e reenviar a chave. Pra apagar tudo, inclusive a licença, escreva pra <a href="mailto:hi@appsolutelyltda.com.br">hi@appsolutelyltda.com.br</a>.</p>
+    <p>O teste de 7 dias não pede conta nem e-mail: o servidor recebe só o código anônimo do Mac, pra contar os dias.</p>
 
-    <footer>
-      <a href="privacidade.html">Privacidade</a><a href="termos.html">Termos</a>
-      <span>Lume, feito por Adriano Binhara</span>
-    </footer>
-  </div>
+    <h2>Como apagar tudo</h2>
+    <ul>
+      <li>Desconecte cada serviço em Fontes e em Agentes. Os tokens e os links de acesso são apagados do seu Mac.</li>
+      <li>Revogue o acesso do Google em <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+      <li>Apague a pasta <code>~/Lume</code> e o app.</li>
+    </ul>
+
+    <h2>Contato</h2>
+    <p>Appsolutely LTDA, <a href="mailto:hi@appsolutelyltda.com.br">hi@appsolutelyltda.com.br</a>.</p>
+
+    <h2>English summary</h2>
+    <p>Lume is a Mac app. User data never passes through any Lume server; the only Lume server is the license server, which stores the purchase e-mail and name, the Stripe session id, an anonymous hash of the active Mac and that Mac's name, for as long as the license exists (processors: Stripe, MillionSend, Cloudflare). Lume reads the user's local iMessage, WhatsApp Desktop, Notes and Contacts data in read-only mode, synced folders the user turns on, and Gmail and Google Calendar data through OAuth, only with the user's permission and only to fulfil the user's requests. Access tokens are stored in the macOS Keychain. Content needed to answer a request is sent to the AI provider the user already uses through their own Claude Code account. AI apps the user connects (Claude, ChatGPT, Cursor, Grok, the user's own bots) query the user's memory in read-only mode, locally or through a private address the user controls; passwords, codes, cards and documents are redacted first. Lume's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Google user data is not used for advertising, is not read by humans, is not sold and is not used to train AI models. Users can revoke access at any time at myaccount.google.com/permissions and by disconnecting inside Lume. Payments are processed by Stripe. Contact: hi@appsolutelyltda.com.br.</p>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <nav aria-label="Rodapé">
+        <a href="privacidade.html">Privacidade</a>
+        <a href="termos.html">Termos</a>
+        <a href="mailto:hi@appsolutelyltda.com.br">Contato</a>
+      </nav>
+      <span>Lume, feito por Adriano Binhara. Vendido por Appsolutely LTDA.</span>
+      <p class="legal">As marcas citadas pertencem aos seus donos. O Lume não é afiliado a elas.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
