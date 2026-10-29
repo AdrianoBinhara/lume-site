@@ -3,6 +3,26 @@
     <channel>
         <title>Lume</title>
         <item>
+            <title>0.3.0</title>
+            <pubDate>Thu, 29 Oct 2026 17:04:06 -0300</pubDate>
+            <link>https://lume.adrianobinhara.com/</link>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>0.3.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Lume 0.3
+
+- **Licença**: 7 dias grátis no primeiro uso. Depois, é só colar a chave que chega no seu e-mail.
+- **Mente**: busca com sugestões ("Pessoa · Leticia"), perguntas direto pela busca e o botão "É a mesma pessoa que…" pra juntar quem aparece com dois nomes.
+- **Agentes**: ChatGPT e Dots num cartão só, e mudar a permissão de um app vale na hora, sem reconectar.
+- **Segurança**: senhas escondidas também em JSON, aprovação obrigatória pra conectores fora da lista de leitura e e-mails forjados não passam mais como seus.
+]]></description>
+            <enclosure url="https://lume.adrianobinhara.com/releases/Lume-0.3.0.zip" length="10181552" type="application/octet-stream" sparkle:edSignature="I+r4UZBeqn5ZKPTgkc0A8MBCDYk1fF5e9/Sd6QfJqiCEnsjhWeX7iUGnq/9Vt78H3MCAqr11wVeqkF49emqiBQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://lume.adrianobinhara.com/releases/Lume3-2.delta" sparkle:deltaFrom="2" length="3973106" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="FxiPDi9cUKHVXwL3dT0iTisDeqe+JWpF6XWUFh8T6weuxFqPDA0RYYM7ZrH8yULVC7hDVnSErl7EMNQRAD3TDQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.2.0</title>
             <pubDate>Wed, 28 Oct 2026 15:46:58 -0300</pubDate>
             <link>https://adrianobinhara.github.io/lume-site/</link>
@@ -17,7 +37,7 @@
 - **Primeiro uso** mais curto. O Telegram ficou opcional.
 - **Atualização automática**: as próximas versões chegam sozinhas.
 ]]></description>
-            <enclosure url="https://adrianobinhara.github.io/lume-site/releases/Lume-0.2.0.zip" length="7287983" type="application/octet-stream" sparkle:edSignature="5b+VCFvQDqWls4uqKcZJS9BDWL1LDJoAl7mlYxF3SNSVm8uGBiiWJuf2hRWFWFbB9t0Jo2IgNu00cGEEOyckCA=="/>
+            <enclosure url="https://lume.adrianobinhara.com/releases/Lume-0.2.0.zip" length="7287983" type="application/octet-stream" sparkle:edSignature="5b+VCFvQDqWls4uqKcZJS9BDWL1LDJoAl7mlYxF3SNSVm8uGBiiWJuf2hRWFWFbB9t0Jo2IgNu00cGEEOyckCA=="/>
         </item>
     </channel>
 </rss>
