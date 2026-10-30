@@ -9,6 +9,7 @@ const LUME = {
   preco: "R$ 97",
   nota: "Pagamento único, 1 ano de atualizações.",
   garantia: "Reembolso em 7 dias.",
+  requisito: "Só para Mac com chip Apple, do M1 em diante, e macOS Tahoe 26 ou mais novo.",
   link: "https://buy.stripe.com/fZufZi4MWc9IdgK3a577O04",
 
   lancamento: true,
@@ -49,17 +50,18 @@ const LUME = {
 
     const garantia = LUME.garantia ? " " + esc(LUME.garantia) : "";
     const nota = (LUME.lancamento ? esc(LUME.notaLancamento) + " " : "") + esc(LUME.nota) + garantia;
+    const req = LUME.requisito ? "<span class=\"note req\">" + esc(LUME.requisito) + "</span>" : "";
 
     doc.querySelectorAll("[data-price]").forEach((el) => {
-      el.innerHTML = LUME.lancamento
+      el.innerHTML = (LUME.lancamento
         ? "<s>" + esc(LUME.preco) + "</s> <strong>" + esc(LUME.precoLancamento) + "</strong> <span class=\"tag\">" + esc(LUME.rotuloLancamento) + "</span><span class=\"note\">" + nota + "</span>"
-        : "<strong>" + esc(LUME.preco) + "</strong> <span class=\"note\">" + nota + "</span>";
+        : "<strong>" + esc(LUME.preco) + "</strong> <span class=\"note\">" + nota + "</span>") + req;
     });
 
     doc.querySelectorAll("[data-price-big]").forEach((el) => {
-      el.innerHTML = LUME.lancamento
+      el.innerHTML = (LUME.lancamento
         ? "<s>" + esc(LUME.preco) + "</s><strong>" + esc(LUME.precoLancamento) + "</strong><span class=\"tag\">" + esc(LUME.rotuloLancamento).replace(/^./, (c) => c.toUpperCase()) + ". " + esc(LUME.notaLancamento) + "</span><span class=\"note\">" + esc(LUME.nota) + garantia + "</span>"
-        : "<strong>" + esc(LUME.preco) + "</strong><span class=\"note\">" + esc(LUME.nota) + garantia + "</span>";
+        : "<strong>" + esc(LUME.preco) + "</strong><span class=\"note\">" + esc(LUME.nota) + garantia + "</span>") + req;
     });
   }
 

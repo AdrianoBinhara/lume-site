@@ -192,6 +192,7 @@ s { text-decoration-thickness: 1.5px; }
   margin-top: 4px;
   text-wrap: balance;
 }
+.price .note.req, .buy .big .note.req { color: var(--ink); }
 
 /* Navegação */
 
