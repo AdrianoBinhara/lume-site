@@ -17,7 +17,7 @@ const LUME = {
   notaLancamento: "Até 05/11 ou 100 primeiros.",
   cupom: "LANCAMENTO",
 
-  download: "releases/Lume-0.3.0.zip",
+  download: "releases/Lume-0.3.1.zip",
 
   // Servidor de licença (o único servidor do Lume). obrigado.html busca a chave aqui.
   licencaURL: "https://licenca.adrianobinhara.com",

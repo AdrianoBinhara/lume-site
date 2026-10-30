@@ -3,6 +3,27 @@
     <channel>
         <title>Lume</title>
         <item>
+            <title>0.3.1</title>
+            <pubDate>Thu, 29 Oct 2026 23:46:11 -0300</pubDate>
+            <link>https://lume.adrianobinhara.com/</link>
+            <sparkle:version>4</sparkle:version>
+            <sparkle:shortVersionString>0.3.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Lume 0.3.1
+
+- **Gmail e Agenda pelo Mac**: em Fontes, o Lume lê seus e-mails pelo Mail e seus compromissos pelo Calendário do Mac. Não precisa entrar com o Google, basta a conta estar em Contas de Internet.
+- **E-mail pronto no Mail**: o Lume abre a janela com o e-mail escrito. Quem clica em Enviar é você.
+- **Eventos com aprovação**: no Calendário do Mac, o Lume só cria um compromisso depois que você aprova.
+- **Sem repetição**: com Google e Mac ligados juntos, cada e-mail e cada evento aparece uma vez só.
+]]></description>
+            <enclosure url="https://lume.adrianobinhara.com/releases/Lume-0.3.1.zip" length="10504737" type="application/octet-stream" sparkle:edSignature="jI/mwUcaYo+JxUVXlAiyeqgbmsJRin7GzO1Fbaco9+bg5Ith+RiPr5E7Ea7c5WYRQFaVIr5AHE/Mrc8sQthmBg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://lume.adrianobinhara.com/releases/Lume4-3.delta" sparkle:deltaFrom="3" length="1472406" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="rLc8g0uzdglkMrBgzSXoIKpmHvfN/A09ovhENe5pAlEg3BoN2NqBFP1wVN/NTuBvCodsrboR6+Q/atijSuVzAA=="/>
+                <enclosure url="https://lume.adrianobinhara.com/releases/Lume4-2.delta" sparkle:deltaFrom="2" length="4278230" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="gUMpW1XB9t+g6exB/STw5acQIHJ/RplEfdIXW4lfY0jEZK+dshxXJi2Qt7u/Wj5srN500aZzmE9jB84yzqiKBw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.3.0</title>
             <pubDate>Thu, 29 Oct 2026 17:04:06 -0300</pubDate>
             <link>https://lume.adrianobinhara.com/</link>
