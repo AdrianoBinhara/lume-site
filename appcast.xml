@@ -3,6 +3,26 @@
     <channel>
         <title>Lume</title>
         <item>
+            <title>0.3.2</title>
+            <pubDate>Sun, 01 Nov 2026 20:34:39 -0300</pubDate>
+            <link>https://lume.adrianobinhara.com/</link>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>0.3.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Lume 0.3.2
+
+- **Sempre ligado**: ⌘Q agora só tira o Lume do Dock. Ele continua na barra de menus, e as IAs conectadas, o Telegram e as rotinas seguem funcionando.
+- **Fechar Lume**: para desligar de verdade, clique no ícone da barra de menus e escolha "Fechar Lume".
+]]></description>
+            <enclosure url="https://lume.adrianobinhara.com/releases/Lume-0.3.2.zip" length="10506344" type="application/octet-stream" sparkle:edSignature="KjhAT0bUnQ81gzwK63cNw0BjGtHypZuTCaITKF2RT01khIGUDj7VENt1Z/HSCst/P9zmHOuJnCC9LO0MckXnDg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://lume.adrianobinhara.com/releases/Lume5-4.delta" sparkle:deltaFrom="4" length="628798" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="UUNHTF99TgouXQAtuJ7RoUfVkPTQ8x6E2F0x4tO89DTKZgG/005/+RrB1pCO36LaU6CFFAIq8DGGfe977wJRDA=="/>
+                <enclosure url="https://lume.adrianobinhara.com/releases/Lume5-3.delta" sparkle:deltaFrom="3" length="1494010" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="ZT6xD3naM+WXis3PdyFw7s5V8aKcXEd6eyWpUKWVPBHi/aj1ikyKEikqj4CyMIOnjIMz2mz3DQk9QKC6vt2dBQ=="/>
+                <enclosure url="https://lume.adrianobinhara.com/releases/Lume5-2.delta" sparkle:deltaFrom="2" length="4278214" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="U3hur89qoU9wiXTB6PphjBGyruF3GsYJ3GQKaKGDxytJh260NXMoZc/EcEhwXxtH4qw+qCAvWKa/peR+YAixAg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.3.1</title>
             <pubDate>Thu, 29 Oct 2026 23:46:11 -0300</pubDate>
             <link>https://lume.adrianobinhara.com/</link>
@@ -42,23 +62,6 @@
             <sparkle:deltas>
                 <enclosure url="https://lume.adrianobinhara.com/releases/Lume3-2.delta" sparkle:deltaFrom="2" length="3973106" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="FxiPDi9cUKHVXwL3dT0iTisDeqe+JWpF6XWUFh8T6weuxFqPDA0RYYM7ZrH8yULVC7hDVnSErl7EMNQRAD3TDQ=="/>
             </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.2.0</title>
-            <pubDate>Wed, 28 Oct 2026 15:46:58 -0300</pubDate>
-            <link>https://adrianobinhara.github.io/lume-site/</link>
-            <sparkle:version>2</sparkle:version>
-            <sparkle:shortVersionString>0.2.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Lume 0.2
-
-- **Agentes**: ligue sua mente no Claude, no ChatGPT, no Cursor e nos seus bots. Passo a passo e aviso quando a primeira consulta chega.
-- **Fontes**: tudo de onde o Lume aprende num lugar só, com iMessage, WhatsApp, Notas e Contatos.
-- **Primeiro uso** mais curto. O Telegram ficou opcional.
-- **Atualização automática**: as próximas versões chegam sozinhas.
-]]></description>
-            <enclosure url="https://lume.adrianobinhara.com/releases/Lume-0.2.0.zip" length="7287983" type="application/octet-stream" sparkle:edSignature="5b+VCFvQDqWls4uqKcZJS9BDWL1LDJoAl7mlYxF3SNSVm8uGBiiWJuf2hRWFWFbB9t0Jo2IgNu00cGEEOyckCA=="/>
         </item>
     </channel>
 </rss>
