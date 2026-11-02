@@ -3,6 +3,26 @@
     <channel>
         <title>Lume</title>
         <item>
+            <title>0.3.3</title>
+            <pubDate>Sun, 01 Nov 2026 20:50:42 -0300</pubDate>
+            <link>https://lume.adrianobinhara.com/</link>
+            <sparkle:version>6</sparkle:version>
+            <sparkle:shortVersionString>0.3.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Lume 0.3.3
+
+- **Aviso de atualização**: quando sair uma versão nova, o Lume mostra uma janela com as novidades e o botão Instalar.
+]]></description>
+            <enclosure url="https://lume.adrianobinhara.com/releases/Lume-0.3.3.zip" length="10507847" type="application/octet-stream" sparkle:edSignature="bSolUMmbptRTcNxkayo8PWr2afkz4FoH1cegAyQI4BGEiGKt/tNMXY0N/s+OyCRhkAfql4BsI7okZhRD+sCVAw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://lume.adrianobinhara.com/releases/Lume6-5.delta" sparkle:deltaFrom="5" length="567214" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="t1KeWOWnUt7Lkyai9/2Il6M9a+dKG6DXE4zlwKMzTUwGOQ1qKN89PcmcjxkTjHWRDIOH0X7432uZVH11jyHYDw=="/>
+                <enclosure url="https://lume.adrianobinhara.com/releases/Lume6-4.delta" sparkle:deltaFrom="4" length="668806" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="1d6ut90IcQodF4eE0DNoYN/cNKww+qCNja0oNEpkAfIPbvvsiWW1jbwHEzloHrSzDB4jnxMlRkn3LjI+p+igBw=="/>
+                <enclosure url="https://lume.adrianobinhara.com/releases/Lume6-3.delta" sparkle:deltaFrom="3" length="1516582" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="OK+MMAG86CaUYeZciSKSX5FG336KvcU+5Dd/0870Kbi6/gny/xLDlJX9lLuc4Xh05i5cDMilkOvfDXrVtfmeDA=="/>
+                <enclosure url="https://lume.adrianobinhara.com/releases/Lume6-2.delta" sparkle:deltaFrom="2" length="4269438" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="HXigyPReD0MdrQiX/43/gijrWg90+kUvBstCPAK7vd9CQ54N+K/fBT11oK9mOtnkyWCmCNMuYMeFGoxu2pwCDg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.3.2</title>
             <pubDate>Sun, 01 Nov 2026 20:34:39 -0300</pubDate>
             <link>https://lume.adrianobinhara.com/</link>
@@ -41,26 +61,6 @@
             <sparkle:deltas>
                 <enclosure url="https://lume.adrianobinhara.com/releases/Lume4-3.delta" sparkle:deltaFrom="3" length="1472406" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="rLc8g0uzdglkMrBgzSXoIKpmHvfN/A09ovhENe5pAlEg3BoN2NqBFP1wVN/NTuBvCodsrboR6+Q/atijSuVzAA=="/>
                 <enclosure url="https://lume.adrianobinhara.com/releases/Lume4-2.delta" sparkle:deltaFrom="2" length="4278230" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="gUMpW1XB9t+g6exB/STw5acQIHJ/RplEfdIXW4lfY0jEZK+dshxXJi2Qt7u/Wj5srN500aZzmE9jB84yzqiKBw=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.3.0</title>
-            <pubDate>Thu, 29 Oct 2026 17:04:06 -0300</pubDate>
-            <link>https://lume.adrianobinhara.com/</link>
-            <sparkle:version>3</sparkle:version>
-            <sparkle:shortVersionString>0.3.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Lume 0.3
-
-- **Licença**: 7 dias grátis no primeiro uso. Depois, é só colar a chave que chega no seu e-mail.
-- **Mente**: busca com sugestões ("Pessoa · Leticia"), perguntas direto pela busca e o botão "É a mesma pessoa que…" pra juntar quem aparece com dois nomes.
-- **Agentes**: ChatGPT e Dots num cartão só, e mudar a permissão de um app vale na hora, sem reconectar.
-- **Segurança**: senhas escondidas também em JSON, aprovação obrigatória pra conectores fora da lista de leitura e e-mails forjados não passam mais como seus.
-]]></description>
-            <enclosure url="https://lume.adrianobinhara.com/releases/Lume-0.3.0.zip" length="10181552" type="application/octet-stream" sparkle:edSignature="I+r4UZBeqn5ZKPTgkc0A8MBCDYk1fF5e9/Sd6QfJqiCEnsjhWeX7iUGnq/9Vt78H3MCAqr11wVeqkF49emqiBQ=="/>
-            <sparkle:deltas>
-                <enclosure url="https://lume.adrianobinhara.com/releases/Lume3-2.delta" sparkle:deltaFrom="2" length="3973106" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="FxiPDi9cUKHVXwL3dT0iTisDeqe+JWpF6XWUFh8T6weuxFqPDA0RYYM7ZrH8yULVC7hDVnSErl7EMNQRAD3TDQ=="/>
             </sparkle:deltas>
         </item>
     </channel>
